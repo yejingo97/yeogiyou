@@ -16,6 +16,7 @@ section.best{
     width: 336px;
     height: auto;
     margin: 0px auto;
+    overflow: hidden;
 }
 h2.mobile_title{
     width: 100%;

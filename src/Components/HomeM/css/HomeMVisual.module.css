@@ -6,6 +6,7 @@ nav.visual{
     width: 336px;
     height: 100%;
     margin: 0px auto;
+    overflow: hidden;
 }
 div.visual_num{
     width: 35px;

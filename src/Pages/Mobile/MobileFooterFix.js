@@ -2,7 +2,7 @@ import React from 'react'
 import Style from './css/MobileFooterFix.module.css'
 import { IoMenu } from "react-icons/io5";
 import { HiMapPin } from "react-icons/hi2";
-import { PiClockCounterClockwiseBold } from "react-icons/pi";
+import { IoSearch } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
 
 export default function MobileFooterFix() {
@@ -33,10 +33,10 @@ export default function MobileFooterFix() {
                 </li>
                 <li>
                     <p className={Style.fixfooter_icon}>
-                        <PiClockCounterClockwiseBold/>
+                        <IoSearch/>
                     </p>
                     <p className={Style.fixfooter_text}>
-                        최근 본 상품
+                        검색
                     </p>
                 </li>
                 <li>

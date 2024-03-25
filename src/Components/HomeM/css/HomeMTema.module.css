@@ -10,6 +10,7 @@ section.tema{
     position: relative;
     left: 0px;
     top: 0px;
+    overflow: hidden;
 }
 h2.mobile_title{
     font: normal 24px 'Black Han Sans';

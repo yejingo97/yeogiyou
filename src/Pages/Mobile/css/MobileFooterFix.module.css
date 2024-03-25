@@ -9,6 +9,7 @@ div.fixfooter{
     width: 350px;
     height: 100%;
     margin: 0px auto;
+    overflow: hidden;
 }
 ul.fixfooter_list{
     width: 100%;

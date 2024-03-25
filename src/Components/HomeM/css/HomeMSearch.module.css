@@ -11,6 +11,7 @@ div.search{
     position: relative;
     right: 0px;
     top: 0px;
+    overflow: hidden;
 }
 div.search input{
     width: 100%;

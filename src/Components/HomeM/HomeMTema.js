@@ -2,6 +2,7 @@ import React from 'react'
 import Style from './css/HomeMTema.module.css'
 import { SlArrowDown } from "react-icons/sl";
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 export default function HomeMTema() {
   return (
@@ -156,8 +157,10 @@ export default function HomeMTema() {
                 </nav>
             </div>
             <div className={Style.best_more_btn}>
-                더 많은 정보 보러가기
-                <span><FaArrowRight/></span>
+                <Link to={'/mobiletema'}>
+                    더 많은 정보 보러가기
+                    <span><FaArrowRight/></span>
+                </Link>
             </div>
         </section>  
     </div>
