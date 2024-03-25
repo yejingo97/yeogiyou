@@ -1,0 +1,141 @@
+div.product_wrap{
+    width: 100%;
+    height: 1000px;
+    margin-top: 90px;
+    overflow: hidden;
+}
+div.header_bar{
+    width: 100%;
+    height: 3px;
+    background: #FFB534;
+    text-indent: 9999px;
+}
+section.product{
+    width: 1200px;
+    height: 700px;
+    margin: 40px auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+div.product_img{
+    width: 10%;
+    height: 600px;
+    margin-right: 4.16%;
+    float: left;
+}
+p.product_sub_img01{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+p.product_sub_img02{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+div.product_main_img{
+    width: 41.66%;
+    height: 600px;
+    margin-right: 4.16%;
+    float: left;
+    overflow: hidden;
+}
+div.product_main_img img{
+    width: 100%;
+}
+div.product_txt{
+    width: 40%;
+    height: 600px;
+    float: left;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.product_txt_top{
+    width: 100%;
+    height: 60px;
+    border-bottom: solid 1px #CFCFCF;
+}
+div.product_title{
+    margin-top: 6px;
+    font: bold 26px 'Noto Sans KR';
+    float: left;
+}
+div.product_title span{
+    font: normal 14px 'Noto Sans KR';
+    margin-left: 12px;
+    color: #909090;
+}
+div.product_title_right{
+    width: 58px;
+    height: 24px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+p.product_good{
+    font-size: 24px;
+    float: left;
+}
+p.product_share{
+    margin-left: 10px;
+    font-size: 24px;
+    float: left;
+}
+div.product_txt_bottom{
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+}
+p.product_hashtag{
+    width: 100%;
+    height: 30px;
+    font: normal 14px 'Noto Sans KR';
+    color: #909090;
+    margin-bottom: 20px;
+}
+p.tema_key{
+    font: normal 14px 'Noto Sans KR';
+    color: #909090;
+    float: left;
+    margin-right: 5px;
+}
+p.product_data_title{
+    font: bold 14px 'Noto Sans KR';
+    margin-bottom: 10px;
+}
+p.product_data{
+    font: normal 14px/24px 'Noto Sans KR';
+    margin-bottom: 20px;
+}
+div.product_link{
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -200px;
+}
+ul.product_link_list{
+    width: 100%;
+    height: 100%;
+}
+ul.product_link_list li{
+    float: left;
+    width: 120px;
+    height: 100%;
+    margin-right: 20px;
+    background: #F1F1F1;
+    border-radius: 10px;
+    text-align: center;
+    font: normal 14px/40px 'Noto Sans KR';
+}
+ul.product_link_list li:hover{
+    transition: 0.4s ease-out;
+    background: #FFB534;
+    color: white;
+}
+ul.product_link_list li:last-child{
+    margin-right: 0px;
+}

@@ -1,0 +1,125 @@
+div.temalist_wrap{
+    width: 100%;
+    min-height: 1500px;
+}
+div.temalist{
+    width: 100%;
+    height: 100%;
+}
+div.tema_category{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 2px #c9c9c9;
+    box-sizing: border-box;
+}
+ul.tema_category_list{
+    width: 850px;
+    height: 50px;
+    padding-left: 27px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+}
+ul.tema_category_list li{
+    font: bold 14px/50px 'Noto Sans KR';
+    text-align: center;
+}
+.selected_category{
+    color: #FF7300;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+}
+div.tema_order{
+    width: 100%;
+    height: 60px;
+}
+ul.tema_order_list{
+    width: 100%;
+    height: 100%;
+    padding-left: 27px;
+    padding-top: 14px;
+    box-sizing: border-box;
+}
+ul.tema_order_list li{
+    float: left;
+    width: 70px;
+    height: 30px;
+    font: normal 14px/30px 'Noto Sans KR';
+    border: solid 1px #c9c9c9;
+    border-radius: 15px;
+    margin-right: 8px;
+    text-align: center;
+}
+.selected_order{
+    background: #000;
+    color: white;
+}
+div.tema_products{
+    width: 100%;
+    height: 100%;
+}
+ul.tema_products_list{
+    width: 100%;
+    height: 100%;
+}
+ul.tema_products_list li:nth-child(1){
+    border-top: solid 1px #c9c9c9;
+}
+ul.tema_products_list li{
+    width: 100%;
+    height: 140px;
+    border-bottom: solid 1px #c9c9c9;
+}
+p.product_img{
+    width: 125px;
+    height: 125px;
+    padding-left: 27px;
+    padding-top: 8px;
+    float: left;
+}
+p.product_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+div.product_txt{
+    width: 196px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+}
+div.product_txt p{
+    font: normal 12px 'Noto Sans KR';
+    margin-bottom: 2px;
+    color: #858585;
+}
+div.product_txt p.product_title{
+    font: bold 20px 'Noto Sans KR';
+    margin-top: 12px;
+    margin-bottom: 10px;
+    color: black;
+}
+div.temalist_page{
+    width: 152px;
+    height: 20px;
+    margin: 30px auto;
+}
+ul.temalist_page_list{
+    width: 100%;
+    height: 100%;
+}
+ul.temalist_page_list li{
+    float: left;
+    font: normal 14px/20px 'Noto Sans KR';
+    margin-right: 14px;
+}
+ul.temalist_page_list li:last-child{
+    margin-right: 0px;
+}
+.selected_page{
+    color: rgb(161, 0, 0);
+    font-style: bold;
+}

@@ -1,0 +1,101 @@
+div.contents_wrap{
+    width: 100%;
+    height: 240px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+section.notice_wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 0px;
+    right: 0px;
+}
+h2.contents_title{
+    width: 100%;
+    height: 38px;
+    font: normal 30px 'Black Han Sans';
+    margin-bottom: 20px;
+}
+div.notice{
+    width: 100%;
+    height: 180px;
+    border-top: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+}
+ul.notice_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-items: stretch;
+}
+ul.notice_list li{
+    box-sizing: border-box;
+    margin-right: 9.5%;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.notice_list li:nth-child(2n){
+    margin-right: 0px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.notice_list li:nth-child(2n)::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 25px;
+    background: #dadada;
+    position: absolute;
+    left: -27px;
+    top: 32px;
+}
+span.notice_title{
+    font: bold 14px 'Noto Sans KR';
+    position: absolute;
+    left: 0px;
+    top: 35px;
+}
+span.new{
+    width: 18px;
+    height: 18px;
+    background: #EF3A65;
+    border-radius: 50px;
+    position: absolute;
+    left: 0px;
+    top: 37px;
+    font: bold 12px 'Noto Sans KR';
+    color: white;
+    text-align: center;
+}
+ul.notice_list li:first-child span.notice_title{
+    left: 24px;
+}
+span.notice_date{
+    font: normal 14px 'Noto Sans KR';
+    color: #9E9E9E;
+    position: absolute;
+    right: 0px;
+    top: 35px;
+}
+button.notice_add{
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    text-align: center;
+    background: none;
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    color: black;
+}
+@media screen and (max-width:1200px){
+    section.notice_wrap{
+        width: 100%;
+    }
+}

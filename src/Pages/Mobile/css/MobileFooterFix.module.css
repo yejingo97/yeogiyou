@@ -1,0 +1,36 @@
+div.fixfooter_wrap{
+    width: 100%;
+    height: 73px;
+    background: #fff;
+    position: fixed;
+    bottom: 0px;
+}
+div.fixfooter{
+    width: 350px;
+    height: 100%;
+    margin: 0px auto;
+}
+ul.fixfooter_list{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+ul.fixfooter_list li{
+    width: 20%;
+    height: 100%;
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+p.fixfooter_icon{
+    font: bold 30px 'Noto Sans KR';
+}
+p.fixfooter_logo{
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+p.fixfooter_text{
+    font: bold 12px 'Noto Sans KR';
+}

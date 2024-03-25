@@ -1,0 +1,32 @@
+div.search_wrap{
+    width: 100%;
+    height: 70px;
+    margin-top: 45px;
+    background: #3E3E3E;
+}
+div.search{
+    width: 326px;
+    height: 40px;
+    margin: 0px auto;
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+div.search input{
+    width: 100%;
+    height: 100%;
+    margin: 14px auto;
+    border-radius: 15px;
+    border: 0px;
+    font: normal 14px 'Noto Sans KR';
+    text-indent: 16px;
+}
+p.search_icon{
+    position: absolute;
+    right: 16px;
+    top: 22px;
+}
+p.search_icon img{
+    width: 24px;
+    height: 24px;
+}

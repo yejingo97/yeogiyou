@@ -1,0 +1,43 @@
+div.visual_wrap{
+    width: 100%;
+    height: 310px;
+    background: url('/public/images/tema_bg.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+div.visual_bar{
+    width: 100%;
+    height: 5px;
+    background: #FFB534;
+    text-indent: 9999px;
+}
+div.visual{
+    width: 1200px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -600px;
+    top: 110px;
+}
+p.visual_title{
+    width: 200px;
+    height: 40px;
+    font: bold 30px 'Noto Sans KR';
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 0px;
+}
+p.visual_txt{
+    width: 450px;
+    height: 20px;
+    font: normal 14px 'Noto Sans KR';
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -225px;
+    top: 50px;
+}

@@ -1,0 +1,178 @@
+div.contents_wrap{
+    width: 100%;
+    height: 758px;
+}
+section.favored_wrap{
+    width: 1200px;
+    height: 100%;
+    margin: 100px auto;
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h2.contents_title{
+    width: 100%;
+    height: 38px;
+    font: normal 30px 'Black Han Sans';
+    margin-bottom: 20px;
+}
+div.favored{
+    width: 100%;
+    height: 700px;
+}
+/* ul.favored_list{
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+} */
+div.favored_inner{
+    width: 100%;
+    height: 100%;
+}
+div.favored_bg_img01{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background: url('/public/images/favored_title_img01.jpg') no-repeat center 0px;
+    background-size: cover;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.favored_bg_img02{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background: url('/public/images/favored_title_img02.jpg') no-repeat center 0px;
+    background-size: cover;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.favored_bg_img03{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background: url('/public/images/favored_title_img03.jpg') no-repeat center 0px;
+    background-size: cover;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.favored_bg_img04{
+    float: left;
+    width: 45%;
+    height: 100%;
+    background: url('/public/images/favored_title_img04.jpg') no-repeat center 0px;
+    background-size: cover;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.favored_box{
+    width: 100%;
+    height: 135px;
+    background: #000000a2;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+div.favored_txt_box{
+    width: 350px;
+    height: 90px;
+    position: absolute;
+    top: 22px;
+    left: 45px;
+}
+p.favored_tema{
+    font: normal 12px 'Noto Sans KR';
+    color: rgba(255, 255, 255, 0.74);
+}
+p.favored_title{
+    font: bold 35px 'Noto Sans KR';
+    color: white;
+    margin-bottom: 5px;
+}
+p.favored_intro{
+    font: normal 14px 'Noto Sans KR';
+    color: rgba(255, 255, 255, 0.74);
+}
+div.favored_01{
+    width: 25.41%;
+    height: 570px;
+    float: left;
+    margin-left: 2.08%;
+}
+p.favored_01_img{
+    width: 100%;
+    height: 500px;
+}
+p.favored_01_img img{
+    width: 100%;
+    height: 100%;
+}
+p.favored_02_img{
+    width: 100%;
+    height: 500px;
+}
+p.favored_02_img img{
+    width: 100%;
+    height: 100%;
+}
+div.favored_02{
+    width: 25.41%;
+    height: 570px;
+    float: left;
+    margin-left: 2.08%;
+}
+p.favored_in_title{
+    font: bold 20px 'Noto Sans KR';
+    margin-top: 20px;
+}
+p.favored_in_title span{
+    font: bold 14px 'Noto Sans KR';
+}
+p.favored_in_txt{
+    font: normal 14px 'Noto Sans KR';
+    margin-top: 2px;
+}
+
+ul.favored_list li:nth-child(2) p.favored_01_img{
+    background: url('/public/images/favored_title_02_img01.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+ul.favored_list li:nth-child(2) p.favored_02_img{
+    background: url('/public/images/favored_title_02_img02.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+ul.favored_list li:nth-child(3) p.favored_01_img{
+    background: url('/public/images/favored_title_03_img01.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+ul.favored_list li:nth-child(3) p.favored_02_img{
+    background: url('/public/images/favored_title_03_img02.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+ul.favored_list li:nth-child(4) p.favored_01_img{
+    background: url('/public/images/favored_title_04_img01.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+ul.favored_list li:nth-child(4) p.favored_02_img{
+    background: url('/public/images/favored_title_04_img02.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+button.favored_right_btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    right: 0px;
+}
+@media screen and (max-width:1200px){
+    section.favored_wrap{
+        width: 100%;
+    }
+}

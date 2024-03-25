@@ -1,0 +1,73 @@
+div.best_wrap{
+    width: 100%;
+    height: 840px;
+    margin-top: 45px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+div.best_bg{
+    width: 100%;
+    height: 150px;
+    background: url('../../../../public/images/mobile_images/best_bg.jpg') no-repeat center 0px;
+    background-size: cover;
+}
+section.best{
+    width: 336px;
+    height: auto;
+    margin: 0px auto;
+}
+h2.mobile_title{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font: normal 24px 'Black Han Sans';
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+}
+div.best{
+    width: 100%;
+    height: 630px;
+    margin-top: -16px;
+}
+ul.best_list{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(3, 2fr);
+    justify-items: stretch;
+    grid-gap: 12px;
+}
+p.best_product_img img{
+    width: 162px;
+    height: 162px;
+    border-radius: 0px 15px 15px 15px;
+}
+p.best_product_title{
+    font: bold 14px 'Noto Sans KR';
+}
+p.best_product_hashtag{
+    font: normal 12px 'Noto Sans KR';
+}
+div.best_more_btn{
+    width: 230px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+    border: solid 1px #D6D6D6;
+    text-indent: 38px;
+    font: bold 14px/50px 'Noto Sans KR';
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    bottom: 0px;
+}
+div.best_more_btn span{
+    position: absolute;
+    right: 38px;
+    top: 3px;
+}
