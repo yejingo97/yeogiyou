@@ -16,7 +16,6 @@ section.best{
     width: 336px;
     height: auto;
     margin: 0px auto;
-    overflow: hidden;
 }
 h2.mobile_title{
     width: 100%;
@@ -32,6 +31,7 @@ div.best{
     width: 100%;
     height: 630px;
     margin-top: -16px;
+    overflow: hidden;
 }
 ul.best_list{
     width: 100%;
