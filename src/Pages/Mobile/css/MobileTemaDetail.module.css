@@ -6,9 +6,13 @@ div.temadetail{
     width: 100%;
     height: 100%;
 }
-ul.temadetail_visual_list{
+div.temadetail{
     width: 100%;
     height: 350px;
+}
+ul.temadetail_visual_list{
+    width: 100%;
+    height: 100%;
     position: relative;
     left: 0px;
     top: 0px;
@@ -24,7 +28,10 @@ div.temadetail_txt{
     width: 336px;
     height: 600px;
     background: #eee;
-    margin: 50px auto;
+    margin: 0px auto;
+    position: relative;
+    left: 0px;
+    top: 380px;
 }
 p.temadetail_category{
     font: normal 14px 'Noto Sans KR';
@@ -60,13 +67,24 @@ p.temadetail_place_txt{
 }
 div.temadetail_intro{
     width: 100%;
-    height: 150px;
+    height: 100px;
     margin-bottom: 14px;
 }
 p.temadetail_intro_title{
     font: bold 14px 'Noto Sans KR';
 }
 p.temadetail_intro_txt{
+    font: normal 14px 'Noto Sans KR';
+}
+div.temadetail_price{
+    width: 100%;
+    height: 100px;
+    margin-bottom: 14px;
+}
+p.temadetail_price_title{
+    font: bold 14px 'Noto Sans KR';
+}
+p.temadetail_price_txt{
     font: normal 14px 'Noto Sans KR';
 }
 
