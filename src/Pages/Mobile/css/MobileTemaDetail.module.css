@@ -2,3 +2,71 @@ div.temadetail_wrap{
     width: 100%;
     min-height: 1000px;
 }
+div.temadetail{
+    width: 100%;
+    height: 100%;
+}
+ul.temadetail_visual_list{
+    width: 100%;
+    height: 350px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+ul.temadetail_visual_list li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+div.temadetail_txt{
+    width: 336px;
+    height: 600px;
+    background: #eee;
+    margin: 50px auto;
+}
+p.temadetail_category{
+    font: normal 14px 'Noto Sans KR';
+    margin-bottom: 6px;
+    color: #b9b9b9;
+}
+p.temadetail_title{
+    font: bold 20px 'Noto Sans KR';
+    margin-bottom: 14px;
+}
+div.temadetail_date{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 14px;
+}
+p.temadetail_date_title{
+    font: bold 14px 'Noto Sans KR';
+}
+p.temadetail_date_txt{
+    font: normal 14px 'Noto Sans KR';
+}
+div.temadetail_place{
+    width: 100%;
+    height: 50px;
+    font: normal 14px 'Noto Sans KR';
+    margin-bottom: 14px;
+}
+p.temadetail_place_title{
+    font: bold 14px 'Noto Sans KR';
+}
+p.temadetail_place_txt{
+    font: normal 14px 'Noto Sans KR';
+}
+div.temadetail_intro{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 14px;
+}
+p.temadetail_intro_title{
+    font: bold 14px 'Noto Sans KR';
+}
+p.temadetail_intro_txt{
+    font: normal 14px 'Noto Sans KR';
+}
+
