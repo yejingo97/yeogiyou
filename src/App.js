@@ -27,7 +27,7 @@ function App() {
                     children:[
                         {index:true, element:<MobileHome/>},
                         {path:'/mobiletema', element:<MobileTemaList/>},
-                        {path:'/mobiletema/:mobiletemaId', element:<MobileTemaDetail/>}
+                        {path:'/mobiletema/:productId', element:<MobileTemaDetail/>}
                     ]
                 }
             ]

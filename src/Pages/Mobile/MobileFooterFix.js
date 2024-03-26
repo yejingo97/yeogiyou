@@ -4,6 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { HiMapPin } from "react-icons/hi2";
 import { IoSearch } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 export default function MobileFooterFix() {
   return (
@@ -28,7 +29,9 @@ export default function MobileFooterFix() {
                 </li>
                 <li>
                     <p className={Style.fixfooter_logo}>
-                        <img src='/images/mobile_images/menu_logo_img.jpg' alt='로고이미지'/>
+                        <Link to={'/'}>
+                            <img src='/images/mobile_images/menu_logo_img.jpg' alt='로고이미지'/>
+                        </Link>
                     </p>
                 </li>
                 <li>

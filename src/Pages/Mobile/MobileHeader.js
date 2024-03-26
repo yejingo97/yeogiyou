@@ -4,6 +4,8 @@ import { IoClose } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import { gsap } from 'gsap';  
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 
 
@@ -48,8 +50,15 @@ export default function MobileHeader() {
   return (
     <header className={Style.mobile_header}>
         <div className={Style.logo_wrap}>
+            <div className={Style.back_icon}>
+                <Link to={'/mobiletema'}>
+                    <IoMdArrowRoundBack/>
+                </Link>
+            </div>
             <h1 className={Style.mobile_logo}>
-                <img src='../images/logo.png' alt="로고이미지"/>
+                <Link to={'/'}>
+                    <img src='../images/logo.png' alt="로고이미지"/>
+                </Link>
             </h1>
         </div>
         <h2 className={Style.mobile_icon} ref={menuBtn} onClick={menuOpen}>
