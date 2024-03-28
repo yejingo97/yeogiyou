@@ -117,8 +117,7 @@ ul.mainmenu_list>li{
     height: 240px;
 } */
 ul.mainmenu_list>li.selected{
-    background: #2c5bd1;
-
+    background: #FFB534;
 }
 ul.mainmenu_list>li span{
     width: 15px;
