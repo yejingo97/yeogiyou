@@ -28,6 +28,7 @@ export default function MobileTemaList() {
             )
         }
     }
+    window.scrollTo(0,0)
   return (
     <div className={Style.temalist_wrap}>
         <div className={Style.temalist}>

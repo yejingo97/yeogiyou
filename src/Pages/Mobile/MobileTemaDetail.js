@@ -13,6 +13,7 @@ export default function MobileTemaDetail() {
         getProductDetail(productId).then((res)=>{
             setSelectedItem(res)
         })
+        window.scrollTo(0,0)
     }, [productId])
 
   return (

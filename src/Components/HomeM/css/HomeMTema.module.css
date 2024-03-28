@@ -1,7 +1,10 @@
 div.tema_wrap{
     width: 100%;
-    height: 1180px;
+    height: auto;
     margin-top: 45px;
+    position: relative;
+    left: 0px;
+    top: 0px;
 }
 section.tema{
     width: 336px;
@@ -16,102 +19,13 @@ h2.mobile_title{
     font: normal 24px 'Black Han Sans';
     margin-bottom: 15px;
 }
-div.tema_hashtag{
-    width: 100%;
-    height: 30px;
-    margin-bottom: 30px;
-}
-ul.tema_hashtag_list{
-    width: 1000px;
-    height: 100%;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    justify-items: stretch;
-    grid-gap: 0.5em;
-}
-ul.tema_hashtag_list li{
-    border: solid 1px #C6C6C6;
-    border-radius: 15px;
-    font: bold 14px/30px 'Noto Sans KR';
-}
-.hashtag_selected{
-    background: black;
-    color: white;
-}
 div.tema_hashtag_detail{
     width: 100%;
-    height: 132px;
+    height: 100%;
 }
 ul.tema_hashtag_detail_list{
     width: 100%;
     height: 100%;
-}
-ul.tema_hashtag_detail_list>li{
-    width: 100%;
-    height: 320px; /*닫힌 높이값 44px*/
-    box-sizing: border-box;
-}
-div.tema_hashtag_detail_txt{
-    width: 100%;
-    height: 44px;
-    margin-top: 15px;
-}
-p.tema_hashtag_detail_title{
-    width: 95%;
-    font: normal 14px/44px 'Noto Sans KR';
-    float: left;
-}
-p.tema_hashtag_detail_icon{
-    width: 5%;
-    font: normal 12px/44px 'Noto Sans KR';
-    float: left;
-}
-div.tema_products{
-    width: 100%;
-    height: 258px;
-    margin-top: 15px;
-}
-ul.tema_products_list{
-    width: 500px;
-    height: 100%;
-}
-ul.tema_products_list>li{
-    width: 200px;
-    height: 100%;
-    float: left;
-    margin-right: 10px;
-    position: relative;
-    left: 0px;
-    bottom: 0px;
-    /* background: yellow; */
-}
-p.product_img img{
-    width: 200px;
-    height: 258px;
-    border-radius: 15px;
-}
-div.product_txt_box{
-    width: 100%;
-    height: 75px;
-    background: #323232ae;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    border-radius: 0px 0px 15px 15px;
-    color: white;
-}
-p.product_txt{
-    font: normal 16px 'Black Han Sans';
-    position: absolute;
-    left: 10px;
-    top: 18px;
-}
-p.product_intro{
-    font: normal 12px 'Noto Sans KR';
-    position: absolute;
-    left: 10px;
-    top: 40px;
 }
 div.best_more_btn{
     width: 230px;
@@ -125,7 +39,7 @@ div.best_more_btn{
     position: absolute;
     left: 50%;
     margin-left: -115px;
-    bottom: 0px;
+    bottom: -80px;
 }
 div.best_more_btn span{
     position: absolute;
