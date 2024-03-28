@@ -83,7 +83,7 @@ span.notice_date{
     right: 0px;
     top: 35px;
 }
-button.notice_add{
+section.notice_wrap button.notice_add i{
     width: 30px;
     height: 30px;
     font-size: 30px;
@@ -91,7 +91,7 @@ button.notice_add{
     background: none;
     position: absolute;
     right: 0px;
-    top: 35px;
+    top: 15px;
     color: black;
 }
 @media screen and (max-width:1200px){

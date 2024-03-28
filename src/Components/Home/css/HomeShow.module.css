@@ -11,6 +11,7 @@ section.show_wrap{
     position: relative;
     left: 0px;
     top: 0px;
+    background: red;
 }
 h2.contents_title{
     width: 100%;
@@ -20,67 +21,30 @@ h2.contents_title{
 }
 div.show{
     width: 100%;
-    height: 480px;
+    height: 542px;
+    background: yellow;
 }
-div.show_inner{
-    width: 100%;
-    height: 100%;
-    /* position: relative;
-    left: 200px;
-    top: 0px; */
-}
-div.show_img{
-    width: 100%;
+div.show_main{
+    width: 583px;
     height: 100%;
 }
-/* ul.show_list li:nth-child(1) div.show_img{
-    background: url() no-repeat center 0px;
-    background-size: contain;
-}
-ul.show_list li:nth-child(2) div.show_img{
-    background: url('/public/images/show_img02.jpg') no-repeat center 0px;
-    background-size: contain;
-}
-ul.show_list li:nth-child(3) div.show_img{
-    background: url('/public/images/show_img03.jpg') no-repeat center 0px;
-    background-size: contain;
-}
-ul.show_list li:nth-child(4) div.show_img{
-    background: url('/public/images/show_img04.jpg') no-repeat center 0px;
-    background-size: contain;
-} */
-/* ul.show_list li:nth-child(1){
-    background: url('/public/images/show_img01.jpg') no-repeat center 0px;
-    background-size: contain;
-} */
-div.show_txt_box{
-    width: 50%;
-    height: 90px;
-    position: absolute;
-    bottom: 22px;
-    left: 50px;
-}
-p.show_tema{
-    font: normal 12px 'Noto Sans KR';
-    color: rgba(255, 255, 255, 0.74);
+p.show_main_img{
+    width: 100%;
+    height: 377px;
+    margin-bottom: 10px;
 }
 p.show_title{
-    font: bold 24px 'Noto Sans KR';
-    color: white;
-    margin-bottom: 5px;
+    font: bold 18px 'Noto Sans';
+    margin-bottom: 10px;
 }
 p.show_intro{
-    font: normal 14px 'Noto Sans KR';
-    color: rgba(255, 255, 255, 0.74);
+    font: normal 12px 'Noto Sans';
+    color: #9b9b9b;
 }
-button.favored_left_btn{
-    left: 0px;
-}
-button.favored_right_btn{
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    right: 0px;
+div.show_main button.show_more_btn{
+    background: none;
+    font: normal 12px 'Noto Sans';
+    border: none;
 }
 @media screen and (max-width:1200px){
     section.show_wrap{

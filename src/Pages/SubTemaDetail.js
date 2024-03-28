@@ -10,7 +10,7 @@ import regExp from '../util/regExp';
 export default function SubSnoopy() {
 
 
-  const {temaId} = useParams()
+  const {temaId} = useParams('')
 
   //const [allProducts] = useProducts()
 

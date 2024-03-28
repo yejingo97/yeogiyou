@@ -15,19 +15,21 @@ export default function HomeMembership() {
             <div className={Style.membership}>
                 <ul className={Style.membership_list}>
                     <li>
-                        <p className={Style.membership_img}>img</p>
+                        <p className={Style.membership_img}>
+                            <img src='../../../images/main_membership_01.png' alt=''/>
+                            
+                        </p>
                     </li>
                     <li>
-                        <p className={Style.membership_img}>img</p>
+                        <p className={Style.membership_img}>
+                            <img src='../../../images/main_membership_02.png' alt=''/>
+                        </p>
                     </li>
                     <li>
-                        <p className={Style.membership_img}>img</p>
-                    </li>
-                    <li>
-                        <p className={Style.membership_img}>img</p>
-                    </li>
-                    <li>
-                        <p className={Style.membership_img}>img</p>
+                        <p className={Style.membership_img}>
+                            <img src='../../../images/main_membership_03.png' alt=''/>
+                        
+                        </p>
                     </li>
                 </ul>
             </div>

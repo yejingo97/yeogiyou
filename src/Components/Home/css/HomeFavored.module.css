@@ -1,6 +1,7 @@
 div.contents_wrap{
     width: 100%;
     height: 758px;
+    overflow: hidden;
 }
 section.favored_wrap{
     width: 1200px;
