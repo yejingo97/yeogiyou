@@ -1,6 +1,7 @@
 import React from 'react'
 import Style from './css/HomeMBest.module.css'
 import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 export default function HomeMBest() {
   return (
@@ -83,8 +84,10 @@ export default function HomeMBest() {
             </div>
         </section>
         <div className={Style.best_more_btn}>
+            <Link to={'/mobiletema'}>
             더 많은 정보 보러가기
             <span><FaArrowRight/></span>
+            </Link>
         </div>
     </div>
   )

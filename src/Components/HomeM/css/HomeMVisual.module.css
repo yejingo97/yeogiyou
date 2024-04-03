@@ -8,24 +8,7 @@ nav.visual{
     margin: 0px auto;
     overflow: hidden;
 }
-div.visual_num{
-    width: 35px;
-    height: 20px;
-    background: #1d1d1d8f;
-    color: white;
-    text-align: center;
-    font: normal 12px/18px 'Noto Sans KR';
-    position: absolute;
-    right: 39px;
-    top: 70px;
-}
-ul.visual_list{
-    width: 1374px;
-    height: 100%;
-}
-ul.visual_list li{
-    float: left;
-    margin-right: 10px;
+.SwiperSlide{
     position: relative;
     left: 0px;
     top: 0px;
@@ -34,7 +17,7 @@ ul.visual_list li:last-child{
     margin-right: 0px;
 }
 p.visual_title{
-    font: normal 30px 'Black Han Sans';
+    font: normal 28px 'Black Han Sans';
     position: absolute;
     left: 15px;
     bottom: 48px;

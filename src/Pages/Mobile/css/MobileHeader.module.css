@@ -7,7 +7,7 @@ header.mobile_header{
     position: relative;
     right: 0px;
     top: 0px;
-    z-index: 1;
+    z-index: 10;
 }
 div.logo_wrap{
     width: 100%;
