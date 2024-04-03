@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Style from './css/MobileTemaDetail.module.css'
 import { useParams } from 'react-router-dom'
 import { getProductDetail } from '../../api/firebase'
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { Link } from 'react-router-dom'
+import MobileFooterFix from './MobileFooterFix';
 
 export default function MobileTemaDetail() {
 
@@ -18,6 +21,18 @@ export default function MobileTemaDetail() {
 
   return (
     <div className={Style.temadetail_wrap}>
+        <div className={Style.logo_wrap}>
+            <div className={Style.back_icon}>
+                <Link to={'/mobiletema'}>
+                    <IoMdArrowRoundBack/>
+                </Link>
+            </div>
+            <h1 className={Style.mobile_logo}>
+                <Link to={'/'}>
+                    <img src='../images/logo.png' alt="로고이미지"/>
+                </Link>
+            </h1>
+        </div>
         <div className={Style.temadetail}>
             <div className={Style.temadetail_visual}>
                 <ul className={Style.temadetail_visual_list}>
@@ -61,6 +76,7 @@ export default function MobileTemaDetail() {
                 </div>
             </div>
         </div>
+        <MobileFooterFix/>
     </div>
   )
 }

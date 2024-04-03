@@ -2,6 +2,7 @@ li.tema_list{
     width: 100%;
     height: 60px; /*닫힌 높이값 60px 324px*/
     overflow: hidden;
+    transition: 0.2s ease-out;
 }
 li.tema_list.selected{
     height: 324px;

@@ -12,6 +12,7 @@ import Coupon from "./Pages/Coupon";
 import Notice from "./Pages/Notice";
 import MobileTemaList from "./Pages/Mobile/MobileTemaList";
 import MobileTemaDetail from "./Pages/Mobile/MobileTemaDetail";
+import MobileCompany from "./Pages/Mobile/MobileCompany";
 
 
 
@@ -26,10 +27,30 @@ function App() {
                     errorElement:<NotFound/>,
                     children:[
                         {index:true, element:<MobileHome/>},
-                        {path:'/mobiletema', element:<MobileTemaList/>},
-                        {path:'/mobiletema/:productId', element:<MobileTemaDetail/>}
+                        {path:'/mobilecompany', element:<MobileCompany/>}
+                        // {path:'/mobiletema', element:<MobileTemaList/>},
+                        // {path:'/mobiletema/:productId', element:<MobileTemaDetail/>}
                     ]
+                },
+
+                {
+                    path:'/mobiletema',
+                    element:<MobileTemaList/>,
+                    errorElement:<NotFound/>,
+                 
+                },
+                {
+                    path:'/mobiletema/:productId',
+                    element:<MobileTemaDetail/>,
+                    errorElement:<NotFound/>,
+                 
                 }
+
+
+
+
+
+
             ]
         )
     }else{

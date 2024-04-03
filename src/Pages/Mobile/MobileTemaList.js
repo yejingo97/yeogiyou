@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import Style from './css/MobileTemaList.module.css'
 import useProducts from '../../hooks/useProducts'
 import { Link } from 'react-router-dom'
+import { IoMdArrowRoundBack } from "react-icons/io";
+import MobileFooterFix from './MobileFooterFix';
 
 export default function MobileTemaList() {
 
@@ -31,6 +33,18 @@ export default function MobileTemaList() {
     window.scrollTo(0,0)
   return (
     <div className={Style.temalist_wrap}>
+        <div className={Style.logo_wrap}>
+            <div className={Style.back_icon}>
+                <Link to={'/'}>
+                    <IoMdArrowRoundBack/>
+                </Link>
+            </div>
+            <h1 className={Style.mobile_logo}>
+                <Link to={'/'}>
+                    <img src='../images/logo.png' alt="로고이미지"/>
+                </Link>
+            </h1>
+        </div>
         <div className={Style.temalist}>
             <div className={Style.tema_category}>
                 <ul className={Style.tema_category_list}>
@@ -94,226 +108,7 @@ export default function MobileTemaList() {
                             )
                         })
                     }
-                    {/* <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <p className={Style.product_img}>
-                            <img src='/images/mobile_images/snowsnoopy.jpg' alt='테마상품이미지01'/>
-                        </p>
-                        <div className={Style.product_txt}>
-                            <p className={Style.product_title}>
-                                스노우 스누피
-                            </p>
-                            <p className={Style.product_price}>
-                                입장료 18,000원
-                            </p>
-                            <p className={Style.product_date}>
-                                2023.12.10 ~ 2024.03.31
-                            </p>
-                            <p className={Style.product_place}>
-                                강원 평창군 봉평면 태기로 174
-                            </p>
-                            <p className={Style.product_intro}>
-                                겨울 분위기 속 귀여운 스누피와 함...
-                            </p>
-                        </div>
-                    </li> */}
+                
                 </ul>
             </div>
             <div className={Style.temalist_page}>
@@ -332,6 +127,7 @@ export default function MobileTemaList() {
                 </ul>
             </div>
         </div>
+        <MobileFooterFix/>
     </div>
   )
 }

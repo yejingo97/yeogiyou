@@ -11,7 +11,6 @@ section.show_wrap{
     position: relative;
     left: 0px;
     top: 0px;
-    background: red;
 }
 h2.contents_title{
     width: 100%;
@@ -22,7 +21,6 @@ h2.contents_title{
 div.show{
     width: 100%;
     height: 542px;
-    background: yellow;
 }
 div.show_main{
     width: 583px;

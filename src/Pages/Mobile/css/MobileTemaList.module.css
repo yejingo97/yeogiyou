@@ -1,6 +1,29 @@
 div.temalist_wrap{
     width: 100%;
-    min-height: 1500px;
+    min-height: 2600px;
+}
+div.logo_wrap{
+    width: 100%;
+    height: 60px;
+}
+div.back_icon{
+    font: bold 30px/30px 'Noto Sans KR';
+    position: absolute;
+    left: 27px;
+    top: 15px;
+}
+h1.mobile_logo{
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+h1.mobile_logo img{
+    width: 125px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    margin-left: -62.5px;
+    top: 10px;
 }
 div.temalist{
     width: 100%;

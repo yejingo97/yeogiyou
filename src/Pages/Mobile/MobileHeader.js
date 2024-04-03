@@ -4,7 +4,6 @@ import { IoClose } from "react-icons/io5";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoMenu } from "react-icons/io5";
 import { gsap } from 'gsap';  
-import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
 
@@ -12,10 +11,10 @@ import { Link } from 'react-router-dom';
 export default function MobileHeader() {
 
     const mainMenuList=[
-        {index:0, name:'회사소개', path:'/', subMenuList:[{index:0, name:'스토리', paht:'/'},{index:1, name:'연혁', path:'/'},{index:2, name:'조직도', path:'/'}]},
-        {index:1, name:'테마별축제', path:'/', subMenuList:[]},
+        {index:0, name:'회사소개', path:'/mobilecompany', subMenuList:[{index:0, name:'스토리', path:'/mobilecompany'},{index:1, name:'연혁', path:'/'},{index:2, name:'조직도', path:'/'}]},
+        {index:1, name:'테마별축제', path:'/mobiletema', subMenuList:[]},
         {index:2, name:'할인권', path:'/', subMenuList:[]},
-        {index:3, name:'공지사항', path:'/', subMenuList:[{index:0, name:'EVENT', paht:'/'},{index:1, name:'Q&A', path:'/'},{index:2, name:'자주하는 질문', path:'/'}]}
+        {index:3, name:'공지사항', path:'/', subMenuList:[{index:0, name:'EVENT', path:'/'},{index:1, name:'Q&A', path:'/'},{index:2, name:'자주하는 질문', path:'/'}]}
     ]
 
     const [activateIndex, setActivateIndex] = useState(null)
@@ -50,11 +49,11 @@ export default function MobileHeader() {
   return (
     <header className={Style.mobile_header}>
         <div className={Style.logo_wrap}>
-            <div className={Style.back_icon}>
+            {/* <div className={Style.back_icon}>
                 <Link to={'/mobiletema'}>
                     <IoMdArrowRoundBack/>
                 </Link>
-            </div>
+            </div> */}
             <h1 className={Style.mobile_logo}>
                 <Link to={'/'}>
                     <img src='../images/logo.png' alt="로고이미지"/>
@@ -82,7 +81,9 @@ export default function MobileHeader() {
                                 {
                                     item.subMenuList.length < 1 ?
                                     <>
-                                        {item.name}
+                                        <Link to={item.path}>
+                                            {item.name}
+                                        </Link>
                                     </>
                                     :
                                     <>
@@ -93,9 +94,11 @@ export default function MobileHeader() {
                                         <ul className={Style.submenu_list}>
                                             {
                                                 item.subMenuList.map((item)=>(
-                                                    <li key={item.index}>
-                                                        {item.name}
-                                                    </li>
+                                                    <Link to={item.path}>
+                                                        <li onClick={menuClose}>
+                                                            {item.name}
+                                                        </li>
+                                                    </Link>
                                                 ))
                                             }
                                         </ul>
