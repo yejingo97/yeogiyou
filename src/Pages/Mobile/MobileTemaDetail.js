@@ -5,6 +5,12 @@ import { getProductDetail } from '../../api/firebase'
 import { IoMdArrowRoundBack } from "react-icons/io";
 import { Link } from 'react-router-dom'
 import MobileFooterFix from './MobileFooterFix';
+import MobileFooter from './MobileFooter';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import '../../Components/css/Swiper.css';
 
 export default function MobileTemaDetail() {
 
@@ -35,17 +41,17 @@ export default function MobileTemaDetail() {
         </div>
         <div className={Style.temadetail}>
             <div className={Style.temadetail_visual}>
-                <ul className={Style.temadetail_visual_list}>
-                    <li>
-                        <img src={selectedItem.image} alt='스노우스누피이미지01'/>
-                    </li>
-                    <li>
-                        <img src={selectedItem.subImage1} alt='스노우스누피이미지02'/>
-                    </li>
-                    <li>
-                        <img src={selectedItem.subImage2} alt='스노우스누피이미지03'/>
-                    </li>
-                </ul>
+                <Swiper className="mySwiper">
+                    <SwiperSlide>
+                        <img src={selectedItem.image} alt='메인이미지'/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={selectedItem.subImage1} alt='서브이미지01'/>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <img src={selectedItem.subImage2} alt='서브이미지02'/>
+                    </SwiperSlide>
+                </Swiper>
             </div>
             <div className={Style.temadetail_txt}>
                 <p className={Style.temadetail_category}>{selectedItem.category}</p>
@@ -76,6 +82,7 @@ export default function MobileTemaDetail() {
                 </div>
             </div>
         </div>
+        <MobileFooter/>
         <MobileFooterFix/>
     </div>
   )

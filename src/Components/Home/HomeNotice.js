@@ -1,5 +1,6 @@
 import React from 'react'
 import Style from './css/HomeNotice.module.css'
+import { Link } from 'react-router-dom'
 
 export default function HomeNotice() {
   return (
@@ -36,7 +37,9 @@ export default function HomeNotice() {
                 </ul>
             </div>
             <button className={Style.notice_add}>
-                <i class="fa-solid fa-plus"></i>
+                <Link to={'/notice'}>
+                    <i class="fa-solid fa-plus"></i>
+                </Link>
             </button>
         </section>
     </div>

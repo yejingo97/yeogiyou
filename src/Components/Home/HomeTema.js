@@ -1,7 +1,9 @@
 import React from 'react'
 import Style from './css/HomeTema.module.css'
+import { Link } from 'react-router-dom'
 
 export default function Contents() {
+    window.scrollTo(0,0)
   return (
     <div className={Style.contents_wrap}>
         <section className={Style.hashtack_wrap}>
@@ -11,20 +13,28 @@ export default function Contents() {
             <div className={Style.hashtack}>
                 <ul className={Style.hashtack_list}>
                     <li>
-                        <p className={Style.hashtack_img}> </p>
-                        <p className={Style.hashtack_txt}>인기축제</p>
+                        <Link to={'/tema'}>
+                            <p className={Style.hashtack_img}> </p>
+                            <p className={Style.hashtack_txt}>인기축제</p>
+                        </Link>
                     </li>
                     <li>
-                        <p className={Style.hashtack_img}> </p>
-                        <p className={Style.hashtack_txt}>농장체험</p>
+                        <Link to={'/tema'}>
+                            <p className={Style.hashtack_img}> </p>
+                            <p className={Style.hashtack_txt}>농장체험</p>
+                        </Link>
                     </li>
                     <li>
-                        <p className={Style.hashtack_img}> </p>
-                        <p className={Style.hashtack_txt}>캠핑/글램핑</p>
+                        <Link to={'/tema'}>
+                            <p className={Style.hashtack_img}> </p>
+                            <p className={Style.hashtack_txt}>캠핑/글램핑</p>
+                        </Link>
                     </li>
                     <li>
-                        <p className={Style.hashtack_img}> </p>
-                        <p className={Style.hashtack_txt}>이색데이트</p>
+                        <Link to={'/tema'}>
+                            <p className={Style.hashtack_img}> </p>
+                            <p className={Style.hashtack_txt}>이색데이트</p>
+                        </Link>
                     </li>
                 </ul>
             </div>

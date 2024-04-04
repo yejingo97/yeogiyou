@@ -9,6 +9,10 @@ export default function MobileTemaList() {
 
     const initMobileCategorys=["전체", "농장체험", "캠핑/글램핑", "계절축제", "식물/수목원", "역사/전통", "특산물", "꽃축제", "이색축제", "공연/전시"]
 
+    const listCategorys=["기본순", "조회순", "좋아요순"]
+
+    const [list, setList] = useState('기본순')
+
     const [allMobileProducts] = useProducts()
 
     const [mobileCategorys, setMobileCategorys] = useState('전체')
@@ -71,9 +75,18 @@ export default function MobileTemaList() {
             </div>
             <div className={Style.tema_order}>
                 <ul className={Style.tema_order_list}>
-                    <li className={Style.selected_order}>기본순</li>
+                    {
+                        listCategorys.map((item)=>{
+                            return (
+                                <li className={item===list && Style.selected_order} onClick={()=>{
+                                    setList(item)
+                                }}>{item}</li>
+                            )
+                        })
+                    }
+                    {/* <li className={Style.selected_order}>기본순</li>
                     <li>조회순</li>
-                    <li>좋아요순</li>
+                    <li>좋아요순</li> */}
                 </ul>
             </div>
             <div className={Style.tema_products}>
