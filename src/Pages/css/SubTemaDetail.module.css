@@ -29,10 +29,18 @@ p.product_sub_img01{
     height: 120px;
     margin-bottom: 20px;
 }
+p.product_sub_img01 img{
+    width: 100%;
+    height: 100%;
+}
 p.product_sub_img02{
     width: 120px;
     height: 120px;
     margin-bottom: 20px;
+}
+p.product_sub_img02 img{
+    width: 100%;
+    height: 100%;
 }
 div.product_main_img{
     width: 41.66%;
